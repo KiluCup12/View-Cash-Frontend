@@ -48,11 +48,10 @@
 
   <script>
     // CONFIGURAÇÃO DO SUPABASE
-    const SUPABASE_URL = "https://fhvudspvpzzasrfnwjc.supabase.co";
-    const SUPABASE_KEY = "sb_publishable_7DSHKpbuwOamaCsN-DtgeQ_YjZpLmpN";
-    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-    
-  
+    const SUPABASE_URL = "https://fhvudspvpzzasrfnwjc.supabase.co"; 
+    const SUPABASE_KEY = "sb_publishable_7DSHKpbuwOamaCsN-DtgeQYjZpLmpN";
+    const supabase = window.createClient(SUPABASE_URL,SUPABASE_KEY);
+
     let usuarioAtual = null;
 
     // Verificar se já existe sessão ativa
@@ -121,4 +120,3 @@
   </script>
 </body>
 </html>
-
