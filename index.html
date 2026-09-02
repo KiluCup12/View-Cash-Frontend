@@ -22,15 +22,19 @@
   <h1>VIEW CASH</h1>
 
   <!-- TELA DE AUTENTICAÇÃO -->
-  <div id="auth-container" class="card">
+   <div id="auth-container" class="card">
     <h2>Aceder à Conta</h2>
-    <input type="email" id="email" placeholder="O teu E-mail">
-    <input type="password" id="password" placeholder="A tua Palavra-passe">
+
+    <input type="email" id="email" placeholder="E-mail">
+    <input type="password" id="password" placeholder="Palavra-passe">
+
     <button class="btn-green" onclick="fazerLogin()">Entrar</button>
     <button class="btn-blue" onclick="fazerRegisto()">Criar Conta Nova</button>
-    <p id="auth-msg" style="color: #ff5252; font-size: 14px;"></p>
-  </div>
 
+    <p id="auth-msg" style="color: #ff5252; font-size: 14px;"></p>
+</div>
+    
+    
   <!-- PAINEL PRINCIPAL (SÓ VISÍVEL APÓS LOGIN) -->
   <div id="dashboard" class="card hidden">
     <p id="user-email" style="font-size: 12px; color: #888;"></p>
@@ -48,10 +52,10 @@
 
   <script>
     // CONFIGURAÇÃO DO SUPABASE
-    const SUPABASE_URL = "https://fhvudspvpzzasrfnwjc.supabase.co"; 
-    const SUPABASE_KEY = "sb_publishable_7DSHKpbuwOamaCsN-DtgeQYjZpLmpN";
+    const SUPABASE_URL = "https://TEU_SUPABASE_PROJECT_URL.supabase.co"; 
+    const SUPABASE_KEY = "TUA_CHAVE_ANON_SUPABASE";
     const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-  
+
     let usuarioAtual = null;
 
     // Verificar se já existe sessão ativa
